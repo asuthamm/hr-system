@@ -1,0 +1,20 @@
+<div class='pageAll'>
+  <h1>Login Page</h1>
+  <br>
+  <div class="formContainer">
+  <div class='formAll' >
+    <%=form_for @user, url: login_path, method: :post do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "log in" %>
+      
+      <%#= link_to(controller: 'users', action: 'new') { 'Create New User' } %>
+  <% end %>
+  </div>
+  <%= button_to 'Create New User', new_user_path, method: :get %>
+  </div>
+</div>
