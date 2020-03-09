@@ -1,6 +1,7 @@
 
-<div class='pageAll'>
+
 <h1>Creating New Employee</h1>
+<div class='pageAll'>
 <div class='formAll'>
 <%=form_for @employee do |f|%>
     <br>
@@ -15,6 +16,7 @@
     <%=f.collection_select :location_id, Location.all, :id, :site%>
     <%= f.label :manager_id %>
     <%=f.collection_select :manager_id, Employee.order(:name), :id, :name%>
+    <%= f.file_field :photo %>
 
     <%=f.submit%>
 <%end%>
