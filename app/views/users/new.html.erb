@@ -2,12 +2,12 @@
 <h1>New User</h1>
 <div class='pageAll'>
 <br>
-  <div class=XformAll>
+  <div class=XformAll1d>
   <br>
     <%= form_for @user, controller: 'users', action: 'create' do |f| %>
       <%= f.label :name %>
       <%= f.text_field :name %>
-
+      <br>
       <%= f.label :password %>
       <%= f.password_field :password %>
 

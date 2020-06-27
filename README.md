@@ -1,24 +1,21 @@
-# README
+# HR Organization System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An HR employee hierarchy application to keep track of current and newly hired employees.
 
-Things you may want to cover:
+- Ruby 2.6.1
+- Rais 6.0.2
 
-* Ruby version
+## System dependencies
 
-* System dependencies
+- bcrypt 3.1.7
+- paperclip 6.0.0
 
-* Configuration
+## Configuration
 
-* Database creation
+- Bcrypt - to encrypt the password field
 
-* Database initialization
+## Database initialization
 
-* How to run the test suite
+- Rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- ...
